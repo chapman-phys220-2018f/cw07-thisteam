@@ -58,7 +58,14 @@ def gen_gaussian_array(a, b, n=1000):
             x  : [a, ..., b] Array of n equally spaced float64 between a and b
             g  : [g(a), ..., g(b)] Array of Gaussian values matched to x
     """
-    pass
+    x = np.linspace(a, b, n)                 # domain list
+    
+    def gauss(x):
+        return (1/math.sqrt(2*math.pi))*math.exp(-x**2/2)
+    
+    gv = np.vectorize(gauss)
+    g = gv(x)
+    return (x, g)
 
 
 def main(a,b,n=1000):
