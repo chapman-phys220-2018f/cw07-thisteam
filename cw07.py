@@ -61,10 +61,9 @@ def gen_gaussian_array(a, b, n=1000):
     x = np.linspace(a, b, n)                 # domain list
     
     def gauss(x):
-        return (1/math.sqrt(2*math.pi))*math.exp(-x**2/2)
+        return (1/np.sqrt(2*np.pi))*np.exp(-x**2/2)
     
-    gv = np.vectorize(gauss)
-    g = gv(x)
+    g = gauss(x)
     return (x, g)
 
 
@@ -113,4 +112,3 @@ if __name__ == "__main__":
         print("  b : float, upper bound of domain")
         print("  n : integer, number of points in domain")
         exit(1)
-
