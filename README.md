@@ -17,7 +17,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 ## Assessment
 
-Similar to CW05, this assignment applied new concepts from Numpy/Pandas to further our understanding of how Jupyter Notebooks can present our work in a clear and organized fashion. We both struggled #4 of the assignment because we were unsure as to how to remove a single point $x=0$ from our array. A mistake that I made was assuming that the two sin functions were to be coded into the Jupyter Notebook. It would be much easier to create a both sin functions for both lists and arrays in the python program. Once finished in the program, creating the graphs are similar to the basic plotting examples in the notebook.
+Similar to CW05, this assignment applied new concepts from Numpy/Pandas to further our understanding of how Jupyter Notebooks can present our work in a clear and organized fashion. We both struggled #4 of the assignment because we were unsure as to how to remove a single point $x=0$ from our array. A mistake that I made was assuming that the two sin functions were to be coded into the Jupyter Notebook. It would be much easier to create a both sin functions for both lists and arrays in the python program. Once finished in the program, creating the graphs are similar to the basic plotting examples in the notebook. The Numpy/Panda slides, Numpy user guide, and StackOverflow.com was used for syntax and examples to complete the assignment.
 
 **CHANGEME**
 
