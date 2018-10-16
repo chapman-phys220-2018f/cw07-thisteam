@@ -1,4 +1,4 @@
-[![Build Status]https://travis-ci.com/chapman-phys220-2018f/cw07-thisteam.svg?branch=master
+[![Build Status] https://travis-ci.com/chapman-phys220-2018f/cw07-thisteam.svg?branch=master
 
 # PHYS220/MATH220/CPSC220 CW 7
 
