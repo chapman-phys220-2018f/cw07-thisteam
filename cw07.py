@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 ###
-# Name: YOUR_FULL_NAME_HERE
-# Student ID: ID_HERE
-# Email: CHAPMAN_EMAIL_HERE
+# Name: Alley and Royal
+# Student ID: 2293544
+# Email: busick@chapman.edu
 # Course: PHYS220/MATH220/CPSC220 Fall 2018
-# Assignment: HOMEWORK_OR_CLASSWORK_NUMBER
+# Assignment: CW07
 ###
 
 """Classwork 07
@@ -42,6 +42,27 @@ def gen_gaussian_list(a, b, n=1000):
     g = [gauss(xk) for xk in x]                  # range list
     return (x, g)
 
+def gen_gaussian_sinclist(a, b, n=1000):
+    dx = (b-a)/(n-1)
+    x = [a + k*dx for k in range(n)] #similar to list above
+    x = [z for z in x if z !=0] #removes zero/ternary operator
+    
+    def sinc(x):
+        return ((math.sin(x))/x) #sinc function
+    
+    g = [sinc(xk) for xk in x]
+    return (x, g)
+
+def gen_gaussian_sinflist(a, b, n=1000):
+    dx = (b-a)/(n-1)
+    x = [a + k*dx for k in range(n)]
+    x = [z for z in x if z !=0] #removes zero/ternary operator
+    
+    def sinf(x):
+        return (math.sin(1/x)) #same as sinc list, just different function
+    
+    g = [sinf(xk) for xk in x]
+    return (x,g)
 
 def gen_gaussian_array(a, b, n=1000):
     """gen_gaussian_array(a, b, n=1000)
@@ -58,9 +79,26 @@ def gen_gaussian_array(a, b, n=1000):
             x  : [a, ..., b] Array of n equally spaced float64 between a and b
             g  : [g(a), ..., g(b)] Array of Gaussian values matched to x
     """
-    pass
+    x = np.linspace(a, b, n)                 # domain list
+    
+    def gauss(x):
+        return (1/np.sqrt(2*np.pi))*np.exp(-x**2/2)
+    
+    g = gauss(x)
+    return (x, g)
 
+def gen_gaussian_sincarray(a, b, n=1000):
+    x = np.linspace(a, b, endpoint=True, num=n)
+    g = np.ones_like(x) #array of ones
+    np.divide(np.sin(x), x, where=x!=0, out=g) #removes zero
+    return (x,g)
 
+def gen_gaussian_sinfarray(a, b, n=1000):
+    x = np.linspace(a, b, endpoint=True, num=n)
+    g = np.ones_like(x) #array of ones
+    g = np.sin(np.divide(1, x, where=x!=0, out=g)) #removes zero
+    return (x,g)
+    
 def main(a,b,n=1000):
     """main(a, b, n=1000)
     Main function for command line operation. Prints result of Gaussian to screen.
