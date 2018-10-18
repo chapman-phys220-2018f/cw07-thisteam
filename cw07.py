@@ -144,4 +144,3 @@ if __name__ == "__main__":
         print("  b : float, upper bound of domain")
         print("  n : integer, number of points in domain")
         exit(1)
-

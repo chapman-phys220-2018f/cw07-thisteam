@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.com/chapman-phys220-2018f/CHANGEME.svg?branch=master)](https://travis-ci.com/chapman-phys220-2018f/CHANGEME)
+[![Build Status](https://travis-ci.com/chapman-phys220-2018f/cw07-thisteam.svg?branch=master)](https://travis-ci.com/chapman-phys220-2018f/cw07-thisteam)
 
 # PHYS220/MATH220/CPSC220 CW 7
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Royal and Alley**
 
 ## Specification
 
@@ -17,9 +17,9 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have. You can use the GitHub web interface to edit this file directly for now.
+Similar to CW05, this assignment applied new concepts from Numpy/Pandas to further our understanding of how Jupyter Notebooks can present our work in a clear and organized fashion. We both struggled with #4 of the assignment because we were unsure as to how to remove a single point $x=0$ from our array. After studying numpy, "where" and "out" keywords were used to remove a single point zero from the array functions and python's ternary operator was used for the list functions. Once the sinc and sinf functions were finished in the program, creating the graphs are similar to the basic plotting examples in the notebook. The Numpy/Panda slides, Numpy user guide, and StackOverflow.com was used for syntax and examples to complete the assignment.
 
-**CHANGEME**
+**Royal and Alley**
 
 ## Honor Pledge
 
@@ -30,4 +30,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAMES**
+**Royal and Alley**
